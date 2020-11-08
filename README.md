@@ -6,6 +6,8 @@
 
 I was annoyed by YouTube changing video titles to poorly auto-translated versions, so I made this script using YouTube Data API to retrive original titles and change them back.
 
+Originally by [pcouy](pcouy/YoutubeAutotranslateCanceler)
+
 # How to use
 
 First, you need a userscript extension, such as Tampermonkey for [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/). Next, click [here](../../raw/test/AntiTranslate.user.js) to install the userscript.
