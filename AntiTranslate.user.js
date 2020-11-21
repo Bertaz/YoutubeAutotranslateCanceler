@@ -2,7 +2,7 @@
 // @name         Youtube Auto-translate Canceler
 // @namespace    https://github.com/Bertaz/YoutubeAutotranslateCanceler
 // @downloadURL  https://github.com/Bertaz/YoutubeAutotranslateCanceler/raw/master/AntiTranslate.user.js
-// @version      0.6
+// @version      0.6.1
 // @description  Remove auto-translated youtube titles
 // @author       Bertaz
 // @author       Pierre Couy
@@ -92,7 +92,7 @@
 
         // REFERENCED VIDEO TITLES - find video link elements in the page that have not yet been changed
         var links = Array.prototype.slice.call(document.getElementsByTagName("a")).filter( a => {
-            return a.id == 'video-title' || a.parentNode.id == 'title'
+            return (a.id == 'video-title' || a.parentNode.id == 'title')
             && !a.className.includes("-radio-")
             && !a.className.includes("-playlist-")
             && alreadyChanged.indexOf(a) == -1;
